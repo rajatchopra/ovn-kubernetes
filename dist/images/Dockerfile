@@ -10,7 +10,7 @@
 #
 # This is based on centos:7
 # openvswitch rpms are from
-# http://cbs.centos.org/kojifiles/packages/openvswitch/2.9.0/4.el7/x86_64/
+# http://cbs.centos.org/kojifiles/packages/openvswitch/2.9.2/1.el7/x86_64/
 #
 # So this file will change over time.
 
@@ -31,12 +31,12 @@ RUN yum install -y  \
 	yum clean all
 
 # get a reasonable version of openvswitch
-RUN rpm -i http://cbs.centos.org/kojifiles/packages/openvswitch/2.9.0/4.el7/x86_64/openvswitch-2.9.0-4.el7.x86_64.rpm
-RUN rpm -i http://cbs.centos.org/kojifiles/packages/openvswitch/2.9.0/4.el7/x86_64/openvswitch-ovn-common-2.9.0-4.el7.x86_64.rpm
-RUN rpm -i http://cbs.centos.org/kojifiles/packages/openvswitch/2.9.0/4.el7/x86_64/openvswitch-ovn-central-2.9.0-4.el7.x86_64.rpm
-RUN rpm -i http://cbs.centos.org/kojifiles/packages/openvswitch/2.9.0/4.el7/x86_64/openvswitch-ovn-host-2.9.0-4.el7.x86_64.rpm
-RUN rpm -i http://cbs.centos.org/kojifiles/packages/openvswitch/2.9.0/4.el7/x86_64/openvswitch-ovn-vtep-2.9.0-4.el7.x86_64.rpm
-RUN rpm -i http://cbs.centos.org/kojifiles/packages/openvswitch/2.9.0/4.el7/x86_64/openvswitch-devel-2.9.0-4.el7.x86_64.rpm
+RUN rpm -i http://cbs.centos.org/kojifiles/packages/openvswitch/2.9.2/1.el7/x86_64/openvswitch-2.9.0-4.el7.x86_64.rpm
+RUN rpm -i http://cbs.centos.org/kojifiles/packages/openvswitch/2.9.2/1.el7/x86_64/openvswitch-ovn-common-2.9.0-4.el7.x86_64.rpm
+RUN rpm -i http://cbs.centos.org/kojifiles/packages/openvswitch/2.9.2/1.el7/x86_64/openvswitch-ovn-central-2.9.0-4.el7.x86_64.rpm
+RUN rpm -i http://cbs.centos.org/kojifiles/packages/openvswitch/2.9.2/1.el7/x86_64/openvswitch-ovn-host-2.9.0-4.el7.x86_64.rpm
+RUN rpm -i http://cbs.centos.org/kojifiles/packages/openvswitch/2.9.2/1.el7/x86_64/openvswitch-ovn-vtep-2.9.0-4.el7.x86_64.rpm
+RUN rpm -i http://cbs.centos.org/kojifiles/packages/openvswitch/2.9.2/1.el7/x86_64/openvswitch-devel-2.9.0-4.el7.x86_64.rpm
 RUN rpm -i http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/c/containernetworking-cni-0.5.1-1.el7.x86_64.rpm
 RUN rm -rf /var/cache/yum
 
